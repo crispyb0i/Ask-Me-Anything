@@ -1,5 +1,5 @@
 {{#if updateQuestionForm}}
-  <h4>Update {{question.owner}}'s {{question.type}}</h4>
+  <h4>Update {{question.author}}'s question</h4>
   <div>
     <form>
       <div class="form-group">
@@ -12,9 +12,9 @@
         {{input value=content id="content" placeholder=question.content}}
       </div>
 
-      <button {{action 'update' question}}>Save</button>
+      <button class="waves-effect waves-light btn" {{action 'update' question}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Update</button>
+  <button class="waves-effect waves-light btn" {{action 'updateQuestionForm'}}>Update</button>
 {{/if}}

@@ -1,4 +1,10 @@
-<h2>Answer(s) to {{question.author}}'s question - {{question.content}}</h2>
-<br>
 
-<button {{action 'delete' question}}>Delete</button>
+<h4>{{question.author}} asks: {{question.content}}</h4>
+<br>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
+<button class="waves-effect waves-light btn" {{action 'delete' question}}>Delete</button>

@@ -1,2 +1,17 @@
+<div class="container">
+
+
+
 <h2>ANSWER PAGE</h2>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.content}} - by {{answer.author}}</li>
+  {{/each}}
+</ul>
+
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
+{{new-answer saveAnswer="saveAnswer" answer=model}}
+{{update-question question=model update="update"}}
+
+</div>
