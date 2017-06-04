@@ -1,11 +1,13 @@
 { "questions": [{
   "id": 1,
   "author": "David Shin",
-  "content": "How tall are whales? Are they measured horizontally or vertically?"
+  "content": "How tall are whales? Are they measured horizontally or vertically?",
+  "information": "Seriously. I'm so confused."
 }, {
   "id": 2,
   "author": "Crazy Mike",
-  "content": "At what age is it weird to go trick-or-treating?"
+  "content": "At what age is it weird to go trick-or-treating?",
+  "information": "I'm so confused"
 }],
 "answers": [{
     "author": "Carol",
